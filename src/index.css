@@ -1,0 +1,164 @@
+@import 'tailwindcss';
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #111118;
+  --bg-tertiary: #1a1a24;
+
+  --text-primary: #f0f0f5;
+  --text-secondary: #9898a8;
+  --text-muted: #55556a;
+
+  --accent: #e879f9;
+  --accent-hover: #d946ef;
+  --accent-dim: rgba(232, 121, 249, 0.12);
+  --accent-border: rgba(232, 121, 249, 0.3);
+
+  --border: rgba(255, 255, 255, 0.06);
+  --border-hover: rgba(255, 255, 255, 0.12);
+
+  /* Typography */
+  --font-sans: 'Inter', sans-serif;
+  --font-code: 'Fira Code', monospace;
+
+  /* Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 80px;
+  --space-10: 120px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  /* Transitions */
+  --transition: 180ms ease-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-sans);
+}
+
+.round-btn {
+  border-radius: 10px;
+}
+.logo-text {
+  font-family: 'Jersey 20', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.text-display {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.text-h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.text-h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.text-h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.text-body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.text-small {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.text-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px; /* غيّري من 1280 لـ 1440 — نفس عرض Figma frame */
+  margin: 0 auto;
+  padding: 0 1rem; /* mobile: 16px */
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 3rem; /* tablet: 48px */
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 5rem; /* desktop: 80px — نفس الـ Figma */
+  }
+}
+
+.section {
+  padding: var(--space-9) 0;
+}
+
+.accent {
+  color: var(--accent);
+}
+.text-secondary {
+  color: var(--text-secondary);
+}
+.text-muted {
+  color: var(--text-muted);
+}
