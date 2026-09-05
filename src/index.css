@@ -132,20 +132,20 @@ button {
 
 .container {
   width: 100%;
-  max-width: 1440px; /* غيّري من 1280 لـ 1440 — نفس عرض Figma frame */
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 1rem; /* mobile: 16px */
+  padding: 0 1rem;
 }
 
 @media (min-width: 768px) {
   .container {
-    padding: 0 3rem; /* tablet: 48px */
+    padding: 0 3rem;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
-    padding: 0 5rem; /* desktop: 80px — نفس الـ Figma */
+    padding: 0 5rem;
   }
 }
 

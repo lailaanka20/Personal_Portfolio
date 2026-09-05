@@ -8,7 +8,7 @@ function Button({ text, variant = 'primary', onClick }) {
   return (
     <button
       className={`
-        flex items-center round-btn  py-3 px-8
+        flex items-center round-btn text-sm md:text-md py-1.5 px-3 md:py-2.5 md:px-6
         ${variants[variant]}
         `}
       onClick={onClick}
