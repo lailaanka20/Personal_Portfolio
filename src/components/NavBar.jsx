@@ -10,7 +10,7 @@ function NavBar() {
       <div className="flex justify-between items-center w-full mx-auto">
         <span className="logo-text text-2xl md:text-4xl">Layla.dev</span>
 
-        <ul className="list-none flex items-center gap-3 md:gap-20 text-[15px] md:text-xl mt-2">
+        <ul className="list-none flex items-center gap-3 md:gap-10 lg:gap-15 text-[15px] md:text-xl mt-2">
           <NavBarLink text="About" link="about"></NavBarLink>
           <NavBarLink text="Skills" link="skills"></NavBarLink>
           <NavBarLink text="Projects" link="projects"></NavBarLink>

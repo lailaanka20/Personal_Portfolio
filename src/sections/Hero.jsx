@@ -24,7 +24,7 @@ function Hero() {
         <h1 className="text-center text-display flex ">
           <p className=" tracking-wide ">
             I design interfaces and
-            <span className="text-(--accent) ">build them.</span>
+            <span className="text-(--accent) "> build them.</span>
           </p>
         </h1>
         <p className="text-(--text-secondary) text-center text-sm md:text-lg  max-w-lg mx-auto mb-10">
