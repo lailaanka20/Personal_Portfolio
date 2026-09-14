@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaLongArrowAltRight } from 'react-icons/fa';
 import ProjectCard from '../components/ProjectCard';
-import PortfolioPhoto from '../assets/Images/portfolio.png';
+import { projects } from '../data/projects';
 
 function Projects() {
   return (
@@ -25,36 +25,20 @@ function Projects() {
             <FaLongArrowAltRight />
           </div>
         </div>
-        <div className="flex items-center justify-center flex-wrap gap-4">
-          <ProjectCard
-            title="Portfolio Project"
-            tag="Live"
-            tagVar="live"
-            description="Designed in Figma and built with React.
-        A showcase of my UI/UX and frontend work."
-            imageUrl={PortfolioPhoto}
-            tags={['React', 'Figma', 'UX Research', 'LLM App Development']}
-          />
-          <ProjectCard
-            title="Portfolio Project"
-            tag="Live"
-            tagVar="wip"
-            description="Designed in Figma and built with React.
-     A showcase of my UI/UX and frontend workA showcase of my UI/UX and frontend work."
-            imageUrl={PortfolioPhoto}
-            tags={['React', 'Figma', 'UX Research', 'LLM App Development']}
-            liveLink="https://example.com"
-            repoLink="https://github.com/example/portfolio"
-          />
-          <ProjectCard
-            title="Portfolio Project"
-            tag="category"
-            tagVar="category"
-            description="Designed in Figma and built with React.
-        A showcase of my UI/UX and frontend work."
-            imageUrl={PortfolioPhoto}
-            tags={['React', 'Figma', 'UX Research', 'LLM App Development']}
-          />
+        <div className="flex items-center justify-center flex-wrap gap-x-5 gap-y-10 ">
+          {projects.map((project) => (
+            <ProjectCard
+              key={project.id}
+              title={project.title}
+              status={project.status}
+              variant={project.variant}
+              description={project.description}
+              tags={project.tags}
+              thumbnail={project.thumbnail}
+              liveLink={project.liveLink}
+              repoLink={project.repoLink}
+            />
+          ))}
         </div>
       </div>
     </section>

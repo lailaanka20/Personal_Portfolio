@@ -1,15 +1,16 @@
 import Tag from '../components/Tag';
+import Me from '../assets/Images/personal-photo.jpg';
 
 function About() {
   return (
     <section id="about" className="bg-(--bg-secondary) py-15">
       <div className="container w-full ">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-18 ">
-          <div className="min-w-75 h-85 mx-auto rounded-2xl bg-(--bg-tertiary) flex items-center justify-center">
-            <span className="text-(--text-muted)">Photo</span>
+          <div className="min-w-75 h-85 mx-auto rounded-2xl bg-(--bg-tertiary)">
+            <img src={Me} alt="Layla" className="w-75 h-85 rounded-2xl" />
           </div>
           <div className="flex-col items-center justify-between md:p-10 text-center lg:text-left h-fit">
-            <h2 className="text-(--accent) text-xl font-bold mb-4">About</h2>
+            <h2 className="text-(--accent) text-xl font-bold mb-4">About Me</h2>
             <h2 className="text-h2 my-6">
               Designer who codes, developer who designs.
             </h2>
